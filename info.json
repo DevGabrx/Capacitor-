@@ -1,0 +1,11 @@
+{
+  "nombreapp": "Medidor De Aura",
+  "descripcion": "Descubre cuanta aura tienes",
+  "icono": "",
+  "grupo": "jueves",
+  "fecha": "2026-11-02",
+  "id": 1,
+  "integrantes": ["Gabriel Pino"],
+  "actividad": "App con Capacitor + Vite ",
+  "url": "https://drive.google.com/file/d/..."
+}

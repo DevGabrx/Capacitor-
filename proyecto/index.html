@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>¿Cuanta aura tienes?</title>
+  </head>
+  <body>
+
+    <div class="app">
+
+    <div class="tag">AURA DETECTOR v1.0</div>
+
+    <h1>¿CUÁNTA <span>AURA</span><br>TIENES?</h1>
+
+    <p class="description">
+        Descubre tu nivel de aura.
+        ¿Eres un NPC o una auténtica leyenda?
+    </p>
+
+    <div class="camera-container" id="cameraContainer">
+
+        <video id="video"
+               autoplay
+               playsinline
+               muted
+               style="display:none">
+        </video>
+
+        <div class="camera-placeholder" id="placeholder">
+            <div class="emoji">🔮</div>
+            <p>Tu aura está esperando...</p>
+        </div>
+
+        <div class="scan-line"></div>
+
+    </div>
+
+    <button class="primary-button" id="startButton">
+        📸 ACTIVAR CÁMARA
+    </button>
+
+    <button class="secondary-button" id="scanButton"
+            style="display:none">
+        ✨ ANALIZAR MI AURA
+    </button>
+
+    <p id="status">
+        Permite el acceso a la cámara para comenzar.
+    </p>
+
+    <div class="result" id="result">
+
+        <h2>RESULTADO DEL ESCANEO</h2>
+
+        <div class="score" id="score">0</div>
+
+        <div class="rank" id="rank">
+            NPC DETECTADO
+        </div>
+
+        <p class="result-description" id="resultDescription">
+            Tu aura ha sido analizada.
+        </p>
+
+        <button class="primary-button"
+                id="retryButton"
+                style="margin-top:20px">
+            🔄 VOLVER A ESCANEAR
+        </button>
+
+    </div>
+
+    <div class="footer">
+        © 2026 AURA LABS · SOLO POR DIVERSIÓN
+    </div>
+
+</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
